@@ -1,0 +1,461 @@
+
+body,html{
+
+    padding: 0;
+    margin: 0px;
+    width:90%;
+    font-style: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration:none; 
+    background-color:#e52165;
+    }
+   
+    .top-nav{   
+        overflow:auto;
+        } 
+    /*navigationbar*/
+        .top-nav  a{
+    
+            display:flexbox;
+            font-size: 30px;
+            color: #fff;
+            margin: 30px;
+            float: right;
+            text-decoration:solid;
+            font-family: 'Raleway', sans-serif;
+        }
+        .top-nav a:hover{
+            color: #8a307f;
+          }
+          a{
+            position: relative;
+            text-decoration: none;
+            font-family: 'Poppins',sans-serif;
+            color: #a0a0a0;
+            font-size: 18px;
+            font: weight 600px;
+            letter-spacing: 0.5px;
+            padding: 0 10px;
+        }
+        /*navigation bar underline*/
+        .top-nav a:after{
+            content: "";
+            position: absolute;
+            background-color: #7a2048;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.1s;
+        }
+        a:hover{
+            color: #ffffff;
+        }
+        a:hover:after{
+            width: 100%;
+        }        
+ /*logoimg*/   
+.logo-img{
+    margin-left: -1170px;
+    margin-top: 10px;
+
+}         
+        
+   
+nav{ 
+    top: 0%;
+    height: 0pc;
+    width:100pc;
+    right: 0%;
+    position: fixed;
+   
+}
+ 
+ .bg-img{   
+    display: flex;
+    text-decoration:none; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*blackcolor*/
+    width: 19%;
+    height: 110vh;
+    margin-left: 1200px;
+    background-color:#222 ;
+    }
+ 
+
+.itext{
+        position:absolute;
+        text-decoration: none;
+        top: 240px;
+        left: 110px;
+        font-size: 40px;
+        text-align:left;
+        color:#0d1137;
+        font-family: 'Raleway', sans-serif;
+    
+}
+
+/*typing animation*/
+
+.itext span{
+    color:#610C63;
+position: relative;
+}
+
+.itext span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#e52165;
+    border-left:2px solid  #e52165;
+    animation: typing 3s steps(18) infinite;
+}
+@keyframes typing {
+    40%,
+    60%{
+        left:calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+
+.itext a{ 
+    background:#610C63;
+    padding: 11px 25px;
+    font-size:  25px;
+     text-decoration: none;
+     font-weight:600;
+     color:#fff;
+     display: inline-block;
+     margin: 30px 0;
+     border-radius: 10px;
+     font-family: 'Raleway', sans-serif;
+}
+
+.cv:hover{
+    background-color:#610C63; 
+    box-shadow: 0px 0px 2px rgb(13, 1, 255),0px 0px 25px#610C63,0px 0px 40px#610C63;
+}
+
+a span{
+    position: relative;
+    width: 1.6rem;
+}
+
+.logo{
+  /* position: fixed;*/
+    display: flex;
+    height: 0px;
+    width:500cm;
+    margin-top: 0pc;
+    margin: bottom;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    }
+    
+    circle{
+     fill: none;
+        stroke:url(#GradientColor);
+        stroke-width: 20px;
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: anim 1s linear forwards;
+      
+    }
+  
+    
+    svg{
+      position:absolute;
+        top:0;
+        left: 0;
+    }
+    @keyframes anim {
+        100%{
+            stroke-dashoffset: 0;
+        }
+    }
+
+
+.container2{
+    width: 125%;
+    height: 140vh;
+    background-color:#222 ;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+margin-right:20px ;
+    
+}
+
+.skills h1{
+    position: relative;
+    top: 50px;
+    color: #ff085f;
+    font-size:40px;
+    margin-top: 30px;
+    display: none;
+}
+.skills h2{
+    font-weight:400 ;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+    top: 170px;
+}
+
+.progress-bar{
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    top: 170px;
+
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius:6px ;
+    width:0%;
+}
+/*percentage circle in skills bar*/
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 50%;
+    background:#222;
+    float: right;
+    margin-top: -20px ;
+    margin-right: -20px;
+    color:#fff;
+    align-items:center;
+    justify-content: center;
+}
+
+#html{
+    background-color:#36c044;
+    animation:html 5s infinite ;
+}
+#css{
+    background-color:#8a307f;
+    animation:css 5s infinite ;
+}
+#java{
+    background-color: #1868ae;
+    animation:java 5s infinite ;
+}
+#kotlin{
+    background-color:#ff9a8d;
+    animation:kotlin 5s infinite ;
+}
+#ui{
+    background-color:#bb3a65;
+    animation:ui 5s infinite ;
+}
+#html span{
+    border: 1px solid #36c044;
+ 
+}
+#css span{
+    border: 1px solid #8a307f;
+ 
+}
+#java span{
+    border: 1px solid  #1868ae;
+}
+#kotlin span{
+    border: 1px solid #ff9a8d;
+}
+#ui span{
+    border: 1px solid #bb3a65;
+}
+@keyframes html {
+    100%{
+        width:90%;
+    }
+    
+}
+@keyframes css {
+    100%{
+        width:80%;
+    }
+    
+}
+@keyframes java{
+    100%{
+        width:85%;
+    }
+    
+}
+@keyframes kotlin{
+    100%{
+        width:50%;
+    }
+    
+}
+@keyframes ui{
+    100%{
+        width:75%;
+    }
+    
+}
+
+
+.grocery-img{
+    position: relative;
+    top: 200px;
+    left: 150px;
+    transition: 0.2s ;
+    
+
+}
+.grocery-img:hover{
+    z-index:1 ;
+    transform: scale(1.20);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+
+.torch-img{  
+
+    position: relative;
+    top: 200px;
+    left: 300px;
+    transition: 0.2s ;
+}
+
+.torch-img:hover{
+    z-index:1 ;
+    transform: scale(1.20);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.notes-img{
+
+    position: relative;
+    top: 200px;
+    left: 450px;
+    transition: 0.2s ;
+}
+.notes-img:hover{
+    z-index:1 ;
+    transform: scale(1.20);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.counter-img{ 
+   position: absolute;
+   top: 400%;
+   left: 10%;
+    transition: 0.2s ;
+}
+
+.counter-img:hover{
+    z-index:1 ;
+    transform: scale(1.20);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.portfolio-img{
+    position: absolute;
+   top: 400%;
+   left: 38%;
+    transition: 0.2s ;
+}
+
+.portfolio-img:hover{ 
+    z-index:1 ;
+    transform: scale(1.20);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.birthdaycard-img{
+    position: absolute;
+    top: 400%;
+    left: 68%;
+     transition: 0.2s ;
+}
+.birthdaycard-img:hover{
+    z-index:1 ;
+    transform: scale(1.20);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+/*aboutpage*/
+
+.container4 a{ 
+        background:#610C63;
+        padding: 16px 20px;
+        font-size: 20px;
+         text-decoration: none;
+         font-weight:400;
+         color:#fff;
+         display: flexbox;   
+         border-radius: 29px;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 120px;
+         font-family: 'Raleway', sans-serif;
+    }
+
+    #about .contact:hover{
+        background-color:#610C63; 
+        box-shadow: 0px 0px 2px yellowgreen,0px 0px 25px#610C63,0px 0px 40px#610C63;
+    }
+    #about{
+
+        position:absolute;
+        text-decoration: none;
+        padding:100px;  
+        margin-top:90pc;
+        font-size: 30px;
+        text-align:left;
+        color:#0d1137;
+        font-family: 'Raleway', sans-serif;
+     }
+/* about page-name typing animation*/        
+
+  
+   
+    #about span{
+        color:#610C63;
+    position: relative;
+    }
+
+    .container4 span{
+        color:#610C63;
+        position: relative;
+    }
+
+
+    .container4 span::after{
+        content:"";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color:#e52165;
+        border-left:2px solid #610C63;
+        animation: typing 4s steps(15) infinite;
+    }
+    @keyframes typing {
+        40%,
+        60%{
+            left:calc(100%);
+        }
+        100%{
+            left: 0;
+        }
+    }
